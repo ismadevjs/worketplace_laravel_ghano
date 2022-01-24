@@ -1,0 +1,8 @@
+register.blade.php done
+_single-product.blade.php done
+_quick_view_data.blade.php done
+details.blade.php done
+WebController.php -> product() done
+home.blade.php done
+order-details.blade.php done
+ProductController.php // admin done
