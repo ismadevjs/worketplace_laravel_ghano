@@ -48,7 +48,7 @@
         @endif
         <div class="d-flex align-items-center justify-content-center d-block">
             <a href="{{route('product',$product->slug)}}">
-                <img src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}" style="width: 140px; height : 160px" 
+                <img src="{{\App\CPU\ProductManager::product_image_path('thumbnail')}}/{{$product['thumbnail']}}" style="width: 140px; height : 160px"
                      onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                      >
             </a>
@@ -89,11 +89,11 @@
                 <br>
                 @if (auth('customer')->user() && auth('customer')->user()->seller == 1)
                 <img src="{{asset('public/assets/front-end/img/commission.jpeg')}}" width="15" height="15">
-                        
+
                 <strong id="commission" class="text-success mb-4"> {{ ($product->commision / 100) * ($product->unit_price) }} DA </strong>
                 @endif
             </div>
-            
+
         </div>
     </div>
 

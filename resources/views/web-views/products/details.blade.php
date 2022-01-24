@@ -268,6 +268,8 @@
                         <span class="h3 font-weight-normal text-accent mr-1">
                             {{\App\CPU\Helpers::get_price_range($product) }}
                         </span>
+                        {{-- // added by isdo --}}
+                        <button class="btn btn-success float-right" id="affiliate_client">Share</button>
                         @if($product->discount > 0)
                             <strike style="color: {{$web_config['secondary_color']}};">
                                 {{\App\CPU\Helpers::currency_converter($product->unit_price)}}
