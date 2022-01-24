@@ -219,7 +219,7 @@ $productReviews = \App\CPU\ProductManager::get_product_review($product->id);
                         <strong id="set-discount-amount"></strong>
                     </div>
                 @endif
-                @if (auth('customer')->user()->seller == 1) 
+                @if (auth('customer')->user() && auth('customer')->user()->seller == 1) 
                     <div class="mb-3 text-success" style="font-size : 20px">
                         <img src="{{asset('public/assets/front-end/img/commission.jpeg')}}" width="20" height="20">
                     <strong>Commission : </strong>
